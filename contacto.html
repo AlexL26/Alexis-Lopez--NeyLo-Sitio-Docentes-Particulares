@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagenes/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Estilos/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav_ul">
+                <a href="profesores.html">
+                    <li>PROFESORES</li>
+                </a>
+                <a href="precios.html">
+                    <li>PRECIOS</li>
+                </a>
+                <a href="dondeestamos.html">
+                    <li>DONDE ESTAMOS</li>
+                </a>
+                <a href="contacto.html">
+                    <li>CONTACTO</li>
+                </a>
+            </ul>    
+        </nav>
+        <div class="inicio">
+            <a href="index.html">
+                <img src="Imagenes/logo.png" alt="Inicio">
+            </a>
+        </div>
+    </header>
+    <main class="contacto">
+        <h1>Contactanos con el siguiente formulario</h1>
+        <div class="field">
+            <form action="php" method="post">
+                <fieldset>
+                    <legend>Escribinos</legend>
+                    <div>
+                        <label for="nombre_y_apellido"> Nombre y Apellido:</label>
+                        <input type="text" placeholder="Nombre y apellido">
+                    </div>
+                    <div>
+                        <label for="email">e_mail:</label>
+                        <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com">
+                    </div>
+                    <div>
+                        <label for="aclaraciones_y_comentarios">Aclaraciones y Comentarios:</label>
+                        <textarea name="aclaraciones" id="aclaraciones" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+            <img src="Imagenes/formulario.png" alt="formulario">
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="index.html" class='a'><img src="Imagenes/logo.png" alt="Incio"></a>
+        <div class="b">
+            <div>
+                <label for="lenguaje">LENGUAJE:</label>
+                <select name="lenguaje" id="lenguaje">
+                    <option value="es">Español</option>
+                    <option value="en">Ingles</option>
+                </select>
+            </div>
+        </div>
+        <ul class="c">
+            <a href="profesores.html">
+                <li>PROFESORES</li>
+            </a>
+            <a href="precios.html">
+                <li>PRECIOS</li>
+            </a>
+            <a href="dondeestamos.html">
+                <li>DONDE ESTAMOS</li>
+            </a>
+            <a href="contacto.html">
+                <li>CONTACTO</li>
+            </a>
+        </ul>
+        <ul class="d">
+            <a class="d_a" href="">
+                <li>
+                    <img src="Imagenes/whatsapp-logo-11.png" alt="whatsapp">
+                </li>
+            </a>
+            <a class="d_a" href="">
+                <li><img src="Imagenes/instagram-logo-png_6023f9ae0feb9-680x680.png" alt="instagram"></li>
+            </a>
+            <a class="d_a" href="">
+                <li>
+                    <img src="Imagenes/twitter-logo-2-1.png" alt="twitter">
+                </li>
+            </a>
+        </ul>
+    </footer>
+</body>
+
+</html>

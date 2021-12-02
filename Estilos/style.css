@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 200vh;
+    display: grid;
+    grid-template-areas: 
+    "hdr hdr hdr"
+    "img img img"
+    "ftr ftr ftr";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 3fr 0.6fr;
+    overflow-x: hidden;
+}
+.header{
+    grid-area: hdr;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "ind ind ind";
+    grid-template-columns: 1rem 15rem;
+}
+.nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    border-left: none;
+    border-bottom: outset 0.1rem rgb(255, 255, 255);
+}
+.nav_ul{
+    background-color: #293B5F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem;
+}
+.nav_ul a{
+    max-height: 2rem ;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-top: none;
+    border-left: none;
+    border-bottom: outset 0.09rem rgb(255, 255, 255);
+    border-right: outset 0.09rem rgb(255, 255, 255);
+    padding: 0.1rem;
+    margin: 1rem;
+}
+.inicio{
+    grid-area: ind;
+    background-image:linear-gradient(to left, #293b5f, #293b5f, #B2AB8C);
+    display: flex;
+    justify-content: center;
+}
+.inicio a{
+    display: flex;
+    justify-content: center;
+    width: 0px;
+}
+.inicio img{
+    height: 15rem;
+}
+.main{
+    grid-area: img;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.main_img{
+    height: 100%;
+    width: 100vw;
+}
+.main_article{
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.657);
+    height: auto;
+    width: 800px;
+    margin-left: 150px;
+    box-shadow: 10px 15px rgba(0, 0, 0, 0.644);
+}
+h1{
+    font-style: italic;
+    font-weight: 800;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0rem;
+}
+.main_article p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 100;
+    margin: 2rem 5rem;
+}
+.footer{
+    grid-area: ftr;
+    background-color: #b2ab8c;
+    display: grid;
+    grid-template-areas: 
+    "a b c d";
+}
+.a{
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a img{
+    width: 12rem;
+    height: 12rem;;
+}
+.b{
+    grid-area: b;
+    display: flex;
+    align-items: flex-end;
+}
+.b div label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.b div select{
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    margin: 4rem 0rem;
+}
+.c{
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.c a{
+    width: 200px;
+    margin-left: 4rem;
+    line-height: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+}
+.d{
+    grid-area: d;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.d li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px;
+}
+.d_a img {
+    height: 10vh;
+}
+/*media querie*/
+@media(max-width:1201px) {
+    .b{
+        margin-bottom: 4rem;
+        margin-left: 1rem;
+    }
+    .b div label{
+        font-size: 1rem;
+    }
+    .b div select{
+        height: 1.5rem;
+        margin: 0.5rem 0rem;
+    }
+}
+@media(max-width:769px) {
+    .main_article{
+        height: auto;
+        width: 70%;
+        margin-left: 10%;
+    }
+    .main_img{
+        width: 200vw;       
+        }    
+    .footer{
+        width: 100vw;
+        grid-template-areas: 
+        "c d"
+        "c b";
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .a{
+        display: none;
+    }
+    .b{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 5%;
+    }
+    .b div label{
+        font-size: 1.5rem;
+        margin: 0rem;
+    }
+    .b div select{
+        margin: 0rem;
+        width: 13rem;
+        height: 2rem;
+    }
+    .c{
+        justify-content: left;    
+        margin-left: 0%;
+        margin-top: 15%;
+    }
+    .c a{
+        margin-left: 10%;
+        width: auto;
+    }
+    .d{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .d_a img {
+        height: 7vh;
+    }
+    .profesores {
+        grid-area: img;
+    }
+    .precios{
+        grid-area: img;
+        width: 100%;
+    }
+    .ubicacion{
+        grid-area: img;
+    }
+    .mapa {
+        width: 100%;
+        height: 50vh;
+    }
+}
+@media(max-width:601px) {
+    body {
+        grid-template-areas: 
+        "hdr"
+        "main"
+        "ftr";
+        grid-template-rows: 1fr 6fr 1fr;
+    }
+    .header{
+        grid-area: hdr;
+        width: 100vw;
+    }
+    .nav{
+        width: 100%;
+        border: unset;
+    }
+    .nav_ul{
+        background-image:linear-gradient(to left, #293b5f, #293b5f, #B2AB8C);
+        flex-direction: column;
+        width: auto;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+    .nav_ul a{
+        border: none;
+        width: 100%;
+        height: 100%;
+        flex: 1;
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+    }
+    .nav_ul a:hover{
+        background-color: rgba(0, 255, 255, 0.712);
+    }
+    .inicio{
+        position: absolute;
+        left: 15%;
+        top: 5%;
+    }
+    .inicio img{
+        height: 10%;
+    }
+    .main{
+        grid-area: main;
+        justify-content: space-around;
+        min-height: 100vh;
+        height: auto;
+        flex-direction: row;
+        overflow-y: hidden;
+    }
+    .main_img{
+        width: 100%;
+        height: auto;
+    }
+    .main_article{
+        position: unset;
+        z-index: none;
+        background-color: unset;
+        width: auto;
+        margin-left: 0px;
+        box-shadow: none;
+        height: 100vh;
+        overflow-y: scroll;
+
+    }
+    h1{
+        margin: 1rem 0rem;
+        font-size: 1.3rem;
+    }
+    .main_article p{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: 100;
+        margin: 1rem;
+    }
+    .profesores {
+        grid-area: main;
+    }
+    .precios{
+        grid-area: main;
+        width: 100%;
+    }
+    .ubicacion{
+        grid-area: main;
+    }
+    .mapa {
+        width: 100%;
+        height: 40vh;
+    }  
+    .footer{
+        width: 100vw;
+        grid-area: ftr;
+        background-color: #b2ab8c;
+        display: grid;
+        grid-template-areas: 
+        "c d"
+        "c b";
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .a{
+        display: none;
+    }
+    .b{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 5%;
+    }
+    .b div label{
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin: 0rem;
+    }
+    .b div select{
+        width: auto;
+        height: 1rem;
+        font-size: 0.9rem;
+        margin: 0rem;
+    }
+    .c{
+        justify-content: left;    
+        margin-left: 0%;
+        margin-top: 15%;
+    }
+    .c a{
+        margin-left: 10%;
+        width: auto;
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+    }
+    .d{
+        justify-content: safe;
+        margin: unset;
+        justify-content: left;
+    }
+    .d li{
+        margin: 10px;
+
+    }
+    .d_a img {
+        height: 7vh;
+    }  
+    .contacto{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .field{
+        width: 90vw;
+        line-height: 20px;        
+    }
+    .field div{
+        margin: 5px 0px
+    }
+}
