@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body {
+.body_ind {
     height: 200vh;
     display: grid;
     grid-template-areas: 
@@ -167,7 +167,115 @@ h1{
 .d_a img {
     height: 10vh;
 }
-/*media querie*/
+/* pagina profesores */
+.body_prof {
+    height: 200vh;
+    display: grid;
+    grid-template-areas: 
+    "hdr hdr hdr"
+    "main main main"
+    "ftr ftr ftr";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 3fr 0.6fr;
+    overflow-x: hidden;
+}
+.profesores{
+    grid-area: main;
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
+.article {
+    background-color:burlywood;
+    width: 40%;
+}
+.article h3{
+    line-height: 300%;    
+    font-size: 1.5rem;
+}
+.article ul {
+    font-size: 1.3rem;
+    margin-left: 10%;
+}
+.aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside img{
+    height: 80%;
+}
+.article:hover ~.aside>img{
+    -webkit-animation: shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s infinite both;
+    animation: shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s infinite both;
+}
+@-webkit-keyframes shake-bottom {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    10% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+    }
+    80% {
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+    }
+    90% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+  }
+@keyframes shake-bottom {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+    }
+    10% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+    }
+    80% {
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+    }
+    90% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+  }
+  /*media querie*/
 @media(max-width:1201px) {
     .b{
         margin-bottom: 4rem;
