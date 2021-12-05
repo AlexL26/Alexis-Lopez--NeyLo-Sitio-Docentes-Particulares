@@ -30,13 +30,13 @@
 .inicio div p{
     color: rgb(0, 0, 0);
     font-size: 16px;
-
 }
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+    background-image: linear-gradient(to left, #293b5f, #293b5f, #B2AB8C);
 }
 .a img{
     width: 100px;
@@ -72,6 +72,31 @@
     width: 50px;
     height: 50px;
 }
+/*pagina profesores*/
+
+.text{
+    background-image: linear-gradient(to bottom, yellowgreen, white);
+}
+.text h1{
+    padding-top: 15px;
+    text-decoration: underline;
+}
+.list {
+    list-style-type: none;
+    text-decoration: none;
+}
+.prof_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prof_img img{
+    height: 200px;
+    width: 200px;
+}
+
+  
+
 @media (min-width: 576px) {
     .inicio{
         display: flex;
@@ -88,6 +113,12 @@
         z-index: 10;
         right: 10%;
     }
+    
+    .prof_img img{
+        height: 250px;
+        width: 250px;
+    }
+    
 }
 @media (min-width:576px) and (orientation:landscape) {
     .inicio{
@@ -109,10 +140,12 @@
     .d {
         padding-bottom: 40px;
         padding-top: 0px;
-    }
-    
+    }    
 }
 @media (min-width:767px){
+    .main_prof {
+        height: auto;
+    }
     .inicio p{
         top: 0%;
     }
@@ -145,6 +178,10 @@
     .d img {
         width: 80px;
         height: 80px;
+    }
+    .text{
+        padding-top: 30px;
+        padding-bottom: 40px;
     }  
 }
 @media (min-width:992px) {
@@ -164,4 +201,82 @@
     .d {
         padding-top: 70px;
     }
-}
+    .text{
+        padding-top: unset;
+    }
+    .prof_img img{
+        height: 400px;
+        width: 400px;
+    }
+    
+    @-webkit-keyframes shake-bottom {
+        0%,
+        100% {
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+        }
+        10% {
+          -webkit-transform: rotate(2deg);
+                  transform: rotate(2deg);
+        }
+        20%,
+        40%,
+        60% {
+          -webkit-transform: rotate(-4deg);
+                  transform: rotate(-4deg);
+        }
+        30%,
+        50%,
+        70% {
+          -webkit-transform: rotate(4deg);
+                  transform: rotate(4deg);
+        }
+        80% {
+          -webkit-transform: rotate(-2deg);
+                  transform: rotate(-2deg);
+        }
+        90% {
+          -webkit-transform: rotate(2deg);
+                  transform: rotate(2deg);
+        }
+      }
+      @keyframes shake-bottom {
+        0%,
+        100% {
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+        }
+        10% {
+          -webkit-transform: rotate(2deg);
+                  transform: rotate(2deg);
+        }
+        20%,
+        40%,
+        60% {
+          -webkit-transform: rotate(-4deg);
+                  transform: rotate(-4deg);
+        }
+        30%,
+        50%,
+        70% {
+          -webkit-transform: rotate(4deg);
+                  transform: rotate(4deg);
+        }
+        80% {
+          -webkit-transform: rotate(-2deg);
+                  transform: rotate(-2deg);
+        }
+        90% {
+          -webkit-transform: rotate(2deg);
+                  transform: rotate(2deg);
+        }
+      }
+      .shake-bottom {
+          -webkit-animation: shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s infinite both;
+                  animation: shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s infinite both;
+      }
+    }
