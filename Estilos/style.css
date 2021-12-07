@@ -113,6 +113,8 @@
     height: 100%;
 }
 
+/* media queries*/
+
 @media (min-width: 576px) {
     .inicio{
         display: flex;
@@ -214,6 +216,9 @@
         padding-top: 30px;
         padding-bottom: 40px;
     }  
+    .ubi_main{
+        background-image: linear-gradient(to left, green, white, white, white, white, white, green);
+    }
     .mapa {
         height: 400px;
         width: 100%;
@@ -226,6 +231,9 @@
     .ubicacion img{
         height: 300px;
         width: 300px;
+    }
+    .ubi_text{
+        font-size: 2rem;        
     }
 }
 @media (min-width:992px) {
