@@ -1,0 +1,27 @@
+/*pagina contactos*/
+
+.contacto{
+    height: 100vh;
+    overflow-x: hidden;
+}
+.form{
+    position: relative;
+}
+.form{
+    &_zindex{
+    z-index: 10;
+    backdrop-filter: blur(8px);
+    padding-top: 30px;
+    }
+}
+.img{
+    &_zindex{
+    position: absolute;
+    z-index: 1;
+    }
+    &_form{
+        img {
+        height: 500px;
+        }
+    }
+}
