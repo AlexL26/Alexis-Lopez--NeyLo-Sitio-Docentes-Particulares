@@ -1,0 +1,22 @@
+/*pagina profesores*/
+
+.text{
+    background-image: linear-gradient(to bottom, yellowgreen, white);
+    h1{
+        padding-top: 15px;
+        text-decoration: underline;
+    }
+}
+.list {
+    list-style-type: none;
+    text-decoration: none;
+}
+.prof_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 200px;
+        width: 200px;
+    }
+}

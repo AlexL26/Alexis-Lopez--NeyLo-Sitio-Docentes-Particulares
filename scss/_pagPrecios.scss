@@ -1,0 +1,22 @@
+/*pagina precios*/
+
+.precios_main{
+    overflow-x: hidden;
+}
+.precios {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.tabla{
+    p {
+    font-size: 14px;
+    }
+    table{
+        font-size: 12px;
+    }
+}
