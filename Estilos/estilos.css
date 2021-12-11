@@ -122,7 +122,8 @@
 /*pagina contactos*/
 .contacto {
   height: 100vh;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 .form {
   position: relative; }
