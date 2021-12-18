@@ -8,8 +8,7 @@
     justify-content: center;
     width: 100vw;
     img{
-        height: 100%;
-        width: 100%;
+        @include size (100%, 100%);
     }
 }
 .tabla{

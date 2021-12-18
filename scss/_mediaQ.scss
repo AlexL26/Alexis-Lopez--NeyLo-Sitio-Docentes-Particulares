@@ -14,12 +14,11 @@
             left: 10%;
             z-index: 10;
             right: 10%;
-        }    
+        }
     }
     .prof_img{
         img{
-        height: 250px;
-        width: 250px;
+            @include size (250px, 250px);
         }
     }
     .tabla{
@@ -31,8 +30,7 @@
         }
     }
     .mapa {
-        height: 400px;
-        width: 100%;
+        @include size (400px, 100%);
     }
     .ubicacion {
         display: flex;
@@ -41,7 +39,7 @@
     }
     .contacto{
         height: auto;
-    }   
+    }
 }
 @media (min-width:576px) and (orientation:landscape) {
     .inicio{
@@ -53,19 +51,17 @@
     }
     .a{
         img{
-        width: 100px;
-        height: 100px;
+            @include size (100px, 100px);
         padding-top: 20px;
         }
     }
     .b{
         padding-top: 20px;
-
     }
     .d {
         padding-bottom: 40px;
         padding-top: 0px;
-    }    
+    }
 }
 @media (min-width:767px){
     .main_prof {
@@ -86,15 +82,14 @@
     }
     .a{
         img{
-        width: 150px;
-        height: 150px;
+            @include size (150px, 150px);
         padding-top: 20px;
         }
     }
     .b{
         padding-top: 20px;
         a{
-            color: #e2d390;
+            color: $color_softYellow;
             line-height: 2.5rem;
             font-size: 1.4rem;
             text-align: left;
@@ -104,31 +99,28 @@
         div{
             label{
                 font-size: 1.4rem;
-                color: #e2d390;
+                color: $color_softYellow;
             }
             select{
-                width: 10rem;
-                height: 2rem;
+                @include size (2rem, 10rem);
                 font-size: 1.2rem;
             }
-        }            
+        }
     }
     .d {
         padding-bottom: 30px;
         padding-top: 0px;
         img {
-            width: 80px;
-            height: 80px;
+            @include size (80px, 80px);
         }
     }
     .text{
         padding-top: 30px;
         padding-bottom: 40px;
-    }  
+    }
     .precios{
         img{
-        height: 80%;
-        width: 90%;
+            @include size (80%, 90%);
         }
     }
     .tabla{
@@ -143,20 +135,18 @@
         background-image: linear-gradient(to left, green, white, white, white, white, white, green);
     }
     .mapa {
-        height: 400px;
-        width: 100%;
+        @include size (400px, 100%);
     }
     .ubicacion {
         display: flex;
         justify-content: center;
         margin: 20px 0px;
         img{
-            height: 300px;
-            width: 300px;
+            @include size (300px, 300px);
         }
     }
     .ubi_text{
-        font-size: 2rem;        
+        font-size: 2rem;
     }
     .form_zindex{
         z-index: 10;
@@ -185,8 +175,7 @@
     }
     .a{
         img{
-        width: 200px;
-        height: 200px;
+            @include size (200px, 200px);
         }
     }
     .b{
@@ -205,9 +194,7 @@
     }
     .prof_img{
         img{
-        height: 600px;
-        width: 600px;
-        padding-left: 100px;
+            @include size (600px, 600px);padding-left: 100px;
         }
     }
     .text{
@@ -222,16 +209,14 @@
         }
     }
     .mapa {
-        height: 600px;
-        width: 80%;
+        @include size (600px, 80%);
     }
     .ubicacion {
         display: flex;
         justify-content: center;
         margin: 20px 0px;
         img{
-            height: 400px;
-            width: 400px;
+            @include size (400px, 400px);
         }
     }
     .contacto{
@@ -240,7 +225,7 @@
     }
     .form_zindex{
         padding: 50px 0px;
-        
+
     }
     .img_zindex{
         position: absolute;
@@ -269,12 +254,12 @@
                   transform: translateX(100px);
         }
       }
-      
+
     .slide-right {
         -webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-    
+
     @-webkit-keyframes shake-bottom {
         0%,
         100% {
@@ -345,4 +330,4 @@
           -webkit-animation: shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s infinite both;
                   animation: shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s infinite both;
       }
-    }
+    } 
