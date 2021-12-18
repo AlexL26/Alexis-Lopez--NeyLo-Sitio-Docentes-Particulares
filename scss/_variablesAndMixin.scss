@@ -1,0 +1,11 @@
+//Variables
+$color_blue: #293b5f;
+$color_grey: #B2AB8C;
+$color_softYellow: #e2d390;
+$fuente_text: Arial, Helvetica, sans-serif;
+
+//Mixin
+@mixin size ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;    
+}

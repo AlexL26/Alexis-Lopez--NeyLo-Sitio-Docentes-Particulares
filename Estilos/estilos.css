@@ -15,8 +15,8 @@
   padding: 0;
   overflow-x: hidden; }
   .inicio img {
-    width: 100%;
     height: 40%;
+    width: 100%;
     right: 0%;
     z-index: 1; }
   .inicio div {
@@ -39,8 +39,8 @@
   background-image: linear-gradient(to left, #293b5f, #293b5f, #B2AB8C); }
 
 .a img {
-  width: 100px;
-  height: 100px; }
+  height: 100px;
+  width: 100px; }
 
 .b {
   margin-right: 50px; }
@@ -68,8 +68,8 @@
   padding-bottom: 20px;
   padding-top: 20px; }
   .d img {
-    width: 50px;
-    height: 50px; }
+    height: 50px;
+    width: 50px; }
 
 /*pagina profesores*/
 .text {
@@ -116,8 +116,8 @@
   height: 300px;
   width: 95vw; }
   .mapa iframe {
-    width: 100%;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
 
 /*pagina contactos*/
 .contacto {
@@ -178,8 +178,8 @@
       position: absolute;
       top: 30%; }
   .a img {
-    width: 100px;
     height: 100px;
+    width: 100px;
     padding-top: 20px; }
   .b {
     padding-top: 20px; }
@@ -197,8 +197,8 @@
   .inicio div p {
     font-size: 1.4rem; }
   .a img {
-    width: 150px;
     height: 150px;
+    width: 150px;
     padding-top: 20px; }
   .b {
     padding-top: 20px; }
@@ -211,15 +211,15 @@
     font-size: 1.4rem;
     color: #e2d390; }
   .c div select {
-    width: 10rem;
     height: 2rem;
+    width: 10rem;
     font-size: 1.2rem; }
   .d {
     padding-bottom: 30px;
     padding-top: 0px; }
     .d img {
-      width: 80px;
-      height: 80px; }
+      height: 80px;
+      width: 80px; }
   .text {
     padding-top: 30px;
     padding-bottom: 40px; }
@@ -259,8 +259,8 @@
   .inicio img {
     height: 100%; }
   .a img {
-    width: 200px;
-    height: 200px; }
+    height: 200px;
+    width: 200px; }
   .b a {
     font-size: 1.5rem; }
   .c {
