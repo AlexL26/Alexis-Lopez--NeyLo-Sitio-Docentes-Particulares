@@ -5,12 +5,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 120vh;
         img{
             height: 100%;
+            
         }
         p{
-            font-size: 20px;
-            top: 50%;
+            font-size: 16px;
+            top: 30%;
             left: 10%;
             z-index: 10;
             right: 10%;
@@ -42,13 +44,23 @@
     }
 }
 @media (min-width:576px) and (orientation:landscape) {
-    .inicio{
-        position: relative;
-        div{
-            position: absolute;
-            top:30%
-        }
-    }
+.inicio{
+     position: relative;
+     div{
+         position: absolute;
+         top: 10%;
+         img{
+             height: 100vh;
+         }
+         p{
+             font-size: 14px;
+             top: 30%;
+             left: 10%;
+             z-index: 10;
+             right: 10%;
+         }
+     }
+ }
     .a{
         img{
             @include size (100px, 100px);
@@ -68,15 +80,12 @@
         height: auto;
     }
     .inicio{
-        p{
-        top: 0%;
-        }
         img{
             height: 65%;
         }
         div{
             p{
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             }
         }
     }
@@ -148,6 +157,11 @@
     .ubi_text{
         font-size: 2rem;
     }
+    .form_text{
+        p{
+        font-size: 20px;
+        }
+    }
     .form_zindex{
         z-index: 10;
         backdrop-filter: blur(8px);
@@ -164,13 +178,13 @@
         }
     }
     .inicio{
-        div{
-            p{
-        font-size: 1.8rem;
-            }
-        }
         img{
             height: 100%;
+        }
+        div{
+            p{
+        font-size: 1.5rem;
+            }
         }
     }
     .a{

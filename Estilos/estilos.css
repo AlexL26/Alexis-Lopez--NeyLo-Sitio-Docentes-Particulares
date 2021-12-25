@@ -10,26 +10,27 @@
 
 .inicio {
   position: relative;
-  height: 100vh;
+  height: 150vh;
   margin: 0;
   padding: 0;
   overflow-x: hidden; }
   .inicio img {
-    height: 40%;
+    height: 300px;
     width: 100%;
     right: 0%;
     z-index: 1; }
   .inicio div {
     background-color: rgba(255, 255, 255, 0.596);
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 35%;
+    left: 5%;
     z-index: 10;
-    right: 10%;
+    right: 5%;
     box-shadow: 10px 15px rgba(0, 0, 0, 0.644); }
     .inicio div p {
+      padding: 0px 10px;
       color: black;
-      font-size: 18px; }
+      font-size: 15px; }
 
 .footer {
   display: flex;
@@ -121,9 +122,8 @@
 
 /*pagina contactos*/
 .contacto {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden; }
+  height: 150vh;
+  overflow-x: hidden; }
 
 .form {
   position: relative; }
@@ -145,12 +145,13 @@
   .inicio {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    height: 120vh; }
     .inicio img {
       height: 100%; }
     .inicio p {
-      font-size: 20px;
-      top: 50%;
+      font-size: 16px;
+      top: 30%;
       left: 10%;
       z-index: 10;
       right: 10%; }
@@ -176,7 +177,15 @@
     position: relative; }
     .inicio div {
       position: absolute;
-      top: 30%; }
+      top: 10%; }
+      .inicio div img {
+        height: 100vh; }
+      .inicio div p {
+        font-size: 14px;
+        top: 30%;
+        left: 10%;
+        z-index: 10;
+        right: 10%; }
   .a img {
     height: 100px;
     width: 100px;
@@ -190,12 +199,10 @@
 @media (min-width: 767px) {
   .main_prof {
     height: auto; }
-  .inicio p {
-    top: 0%; }
   .inicio img {
     height: 65%; }
   .inicio div p {
-    font-size: 1.4rem; }
+    font-size: 1.3rem; }
   .a img {
     height: 150px;
     width: 150px;
@@ -244,6 +251,8 @@
       width: 300px; }
   .ubi_text {
     font-size: 2rem; }
+  .form_text p {
+    font-size: 20px; }
   .form_zindex {
     z-index: 10;
     backdrop-filter: blur(8px);
@@ -254,10 +263,10 @@
     font-size: 3.5rem; }
   .nav_text a {
     font-size: 1.5rem; }
-  .inicio div p {
-    font-size: 1.8rem; }
   .inicio img {
     height: 100%; }
+  .inicio div p {
+    font-size: 1.5rem; }
   .a img {
     height: 200px;
     width: 200px; }
