@@ -10,26 +10,27 @@
 }
 .inicio{
     position: relative;
-    height: 100vh;
+    height: 150vh;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     img{
-        @include size (40%, 100%);
+        @include size (300px, 100%);
         right: 0%;
         z-index: 1;
     }
     div{
         background-color: rgba(255, 255, 255, 0.596);
         position: absolute;
-        top: 50%;
-        left: 10%;
+        top: 35%;
+        left: 5%;
         z-index: 10;
-        right: 10%;
+        right: 5%;
         box-shadow: 10px 15px rgba(0, 0, 0, 0.644);
         p{
+            padding: 0px 10px;
             color: rgb(0, 0, 0);
-            font-size: 18px;
+            font-size: 15px;
         }
     }
 }
