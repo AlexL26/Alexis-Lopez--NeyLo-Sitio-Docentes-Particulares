@@ -12,7 +12,7 @@
 .navbar_color {
   background-image: linear-gradient(to right, #6998AB, #6998AB, #406882, #406882, #406882, #6998AB, #6998AB); }
   .navbar_color .txt {
-    color: #031a47;
+    color: white;
     font-family: 'Courgette', cursive;
     font-size: 1rem;
     font-weight: bold;
@@ -26,32 +26,31 @@
       height: 100%;
       width: 100%; }
 
-.main {
-  background-image: linear-gradient(to bottom, #055b66, #2eb380); }
-
 .inicio {
-  position: relative;
-  height: 150vh;
+  height: auto;
   margin: 0;
   padding: 0;
   overflow-x: hidden; }
   .inicio img {
-    height: 300px;
+    height: auto;
     width: 100%;
-    right: 0%;
-    z-index: 1; }
-  .inicio div {
-    background-color: rgba(255, 255, 255, 0.596);
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    z-index: 10;
-    right: 5%;
-    box-shadow: 10px 15px rgba(0, 0, 0, 0.644); }
-    .inicio div p {
-      padding: 0px 10px;
-      color: black;
-      font-size: 15px; }
+    margin: 20px 0;
+    right: 0%; }
+  .inicio div h1 {
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 0.67em 0; }
+  .inicio div p {
+    padding: 0px 25px;
+    color: black;
+    font-size: 16px; }
+    .inicio div p span {
+      font-weight: 700; }
+  .inicio div p:last-child {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700; }
 
 .footer {
   display: flex;
@@ -163,19 +162,14 @@
 
 /* media queries*/
 @media (min-width: 576px) {
-  .inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120vh; }
-    .inicio img {
-      height: 100%; }
-    .inicio p {
-      font-size: 16px;
-      top: 30%;
-      left: 10%;
-      z-index: 10;
-      right: 10%; }
+  .inicio img {
+    height: auto;
+    width: 100%; }
+  .inicio p {
+    font-size: 16px;
+    top: 30%;
+    left: 10%;
+    right: 10%; }
   .prof_img img {
     height: 250px;
     width: 250px; }
@@ -194,19 +188,15 @@
     height: auto; } }
 
 @media (min-width: 576px) and (orientation: landscape) {
-  .inicio {
-    position: relative; }
-    .inicio div {
-      position: absolute;
-      top: 10%; }
-      .inicio div img {
-        height: 100vh; }
-      .inicio div p {
-        font-size: 14px;
-        top: 30%;
-        left: 10%;
-        z-index: 10;
-        right: 10%; }
+  .inicio div {
+    top: 10%; }
+    .inicio div img {
+      height: 100vh; }
+    .inicio div p {
+      font-size: 14px;
+      top: 30%;
+      left: 10%;
+      right: 10%; }
   .a img {
     height: 100px;
     width: 100px;
@@ -224,12 +214,13 @@
     text-shadow: 1px 1px 3px black, 0 0 1em rgba(255, 255, 255, 0.637), 0 0 0.2em rgba(255, 255, 255, 0.664); }
   .navbar_color .txt {
     font-size: 1.4rem; }
-  .main_prof {
-    height: auto; }
   .inicio img {
-    height: 65%; }
+    height: auto;
+    width: 100%; }
   .inicio div p {
     font-size: 1.3rem; }
+  .main_prof {
+    height: auto; }
   .a img {
     height: 150px;
     width: 150px;
@@ -291,12 +282,35 @@
   .nav_aling {
     justify-content: right; }
   .navbar_color .txt {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-right: 20px; }
-  .inicio img {
-    height: 100%; }
-  .inicio div p {
+  .main {
+    background-color: #e2e2e2; }
+  .content {
+    background-color: white;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22); }
+  .inicio .img_inicio {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .inicio .img_inicio img {
+      height: 80vh;
+      width: 80%; }
+    .inicio .img_inicio img:last-child {
+      margin-bottom: 8vh; }
+  .inicio .div_content h1 {
+    font-size: 2.8em; }
+  .inicio .div_content img {
+    height: 400px;
+    width: 400px;
+    border-radius: 200px; }
+  .inicio .div_content p {
     font-size: 1.5rem; }
+  .inicio .div_content p:last-child {
+    font-size: 1.8rem;
+    padding: 30px 50px;
+    font-style: italic; }
   .a img {
     height: 200px;
     width: 200px; }
