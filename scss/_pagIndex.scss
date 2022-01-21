@@ -12,7 +12,7 @@
 .navbar_color{
     background-image: linear-gradient(to right, #6998AB, #6998AB, #406882, #406882, #406882, #6998AB, #6998AB);
     .txt{
-        color: rgb(3, 26, 71);
+        color: rgb(255, 255, 255);
         font-family: 'Courgette', cursive;
         font-size: 1rem;
         font-weight: bold;
@@ -30,32 +30,35 @@
         }
     }
 }
-.main {
-    background-image: linear-gradient(to bottom, rgb(5, 91, 102), rgb(46, 179, 128));
-}
 .inicio{
-    position: relative;
-    height: 150vh;
+    height: auto;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     img{
-        @include size (300px, 100%);
+        @include size (auto, 100%);
+        margin: 20px 0;
         right: 0%;
-        z-index: 1;
     }
     div{
-        background-color: rgba(255, 255, 255, 0.596);
-        position: absolute;
-        top: 35%;
-        left: 5%;
-        z-index: 10;
-        right: 5%;
-        box-shadow: 10px 15px rgba(0, 0, 0, 0.644);
+        h1{
+            text-align: center;
+            font-size: 2em;
+            text-decoration: underline;
+            margin: 0.67em 0;
+        }
         p{
-            padding: 0px 10px;
+            padding: 0px 25px;
             color: rgb(0, 0, 0);
-            font-size: 15px;
+            font-size: 16px;
+            span{
+                font-weight: 700;
+            }
+        }
+        p:last-child{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
         }
     }
 }
