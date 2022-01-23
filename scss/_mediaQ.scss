@@ -2,14 +2,65 @@
 
 @media (min-width: 576px) {
     .inicio{
-        img{
-            @include size (auto, 100%)           
+        .img_inicio{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            img{
+            @include size (auto, 90%);
+            object-fit: cover;
+            }
         }
-        p{
-            font-size: 16px;
-            top: 30%;
-            left: 10%;
-            right: 10%;
+        .img_final{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            img{
+                @include size (auto, 90%);
+                margin-bottom: 8vh;
+            }
+        }
+        .div_content{
+            h1{
+                font-size: 2em
+            }
+            img{
+                @include size (280px, 280px);
+                border-radius:140px;
+            }
+            p{
+            font-size: 1rem;
+            }
+            p:last-child{
+                font-size: 1.6rem;
+                padding: 30px 50px;            
+                font-style: italic
+            }
+        }
+    }
+    .logo{
+        .link{
+            @include size (125px, 125px);
+        }
+    }
+    .lista{
+        margin-top: 25px;
+        a{
+            font-size: 1.2rem;
+        }
+    }
+    .idiomas {
+        margin-top: 25px;
+        div{
+             label{ 
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: white
+             }
+             select{
+                @include size (1.2rem, 100px);
+                font-size: 0.8rem;
+            }
         }
     }
     .prof_img{
@@ -78,51 +129,31 @@
         }
     }
     .inicio{
-        img{
-            @include size (auto, 100%)
+    .div_content{
+        h1{
+            font-size: 2.4em;
         }
-        div{
-            p{
-                font-size: 1.3rem;
+        p{
+        font-size: 1.2rem;
+        padding: 0px 50px;
+        }
+        p:last-child{
+            font-size: 1.8rem;
+            padding: 30px 50px;
+        }
+    }
+    }
+    .redes {
+        justify-content: space-evenly;
+        a{
+            img {
+            @include size (70px, 70px);
             }
         }
     }
+
     .main_prof {
         height: auto;
-    }
-    .a{
-        img{
-            @include size (150px, 150px);
-        padding-top: 20px;
-        }
-    }
-    .b{
-        padding-top: 20px;
-        a{
-            color: $color_softYellow;
-            line-height: 2.5rem;
-            font-size: 1.4rem;
-            text-align: left;
-        }
-    }
-    .c{
-        div{
-            label{
-                font-size: 1.4rem;
-                color: $color_softYellow;
-            }
-            select{
-                @include size (2rem, 10rem);
-                font-size: 1.2rem;
-            }
-        }
-    }
-    .d {
-        padding-bottom: 30px;
-        padding-top: 0px;
-        img {
-            @include size (80px, 80px);
-        }
     }
     .text{
         padding-top: 30px;
@@ -183,22 +214,22 @@
         }
     }
     .main{
-        background-color: rgb(226, 226, 226);
+        background-color: rgba(170, 191, 219, 0.404);
     }
-    .content{
+    .contenido{
         background-color: white;
         -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0,0,0,0.22); 
-        box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0,0,0,0.22);    }
+        box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0,0,0,0.22);
+    }
     .inicio{
         .img_inicio{
-            display: flex;
-            justify-content: center;
-            width: 100%;
             img{
-            @include size (80vh, 80%);
+            @include size (70vh, 80%);
             }
-            img:last-child{
-                margin-bottom: 8vh;
+        }
+        .img_final{
+            img{
+                @include size (auto, 70%);
             }
         }
         .div_content{
@@ -210,31 +241,45 @@
                 border-radius:200px;
             }
             p{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             }
             p:last-child{
                 font-size: 1.8rem;
-                padding: 30px 50px;
-            
+                padding: 30px 50px;            
                 font-style: italic
             }
         }
     }
-    .a{
-        img{
+    .logo{
+        .link{
             @include size (200px, 200px);
         }
     }
-    .b{
+    .lista{
         a{
-        font-size: 1.5rem;
+            font-size: 1.4rem;
+            line-height: 2.8rem;
         }
     }
-    .c{
-        padding-top: 80px;
+    .idiomas {
+        div{
+            label{ 
+        font-size: 1.5rem;
+            }
+            select{
+                @include size (30px, 90%);
+                font-size: 1rem;
+            }
+        }
     }
-    .d {
-        padding-top: 70px;
+    .redes {
+        padding: unset;
+        margin-bottom: unset;
+        a{
+            img {
+            @include size (80px, 80px);
+            }
+        }
     }
     .text{
         padding-top: unset;

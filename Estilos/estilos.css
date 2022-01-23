@@ -44,7 +44,7 @@
   .inicio div p {
     padding: 0px 25px;
     color: black;
-    font-size: 16px; }
+    font-size: 14px; }
     .inicio div p span {
       font-weight: 700; }
   .inicio div p:last-child {
@@ -57,40 +57,53 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-image: linear-gradient(to left, #293b5f, #293b5f, #B2AB8C); }
+  background-image: linear-gradient(to right, #6998AB, #6998AB, #406882, #406882, #406882, #6998AB, #6998AB); }
 
-.a img {
-  height: 100px;
-  width: 100px; }
+.logo {
+  margin: 25px 0px; }
+  .logo .link {
+    height: 100px;
+    width: 100px; }
+    .logo .link img {
+      height: 100%;
+      width: 100%; }
 
-.b {
-  margin-right: 50px; }
-  .b a {
-    line-height: 1.5rem;
+.lista {
+  padding: unset;
+  margin-bottom: 25px; }
+  .lista a {
+    line-height: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 1rem;
-    color: black;
+    color: white;
     list-style-type: none;
     text-decoration: none;
     text-align: center; }
 
-.c div label {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
-  font-weight: bold; }
+.idiomas {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px; }
+  .idiomas div label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white; }
+  .idiomas div select {
+    height: 1.2rem;
+    width: 100px;
+    font-size: 0.8rem; }
 
-.c div select {
-  height: 1.2rem;
-  width: 100px;
-  font-size: 0.8rem; }
-
-.d {
-  padding-bottom: 20px;
-  padding-top: 20px; }
-  .d img {
-    height: 50px;
-    width: 50px; }
+.redes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px; }
+  .redes a {
+    padding: 0px 10px; }
+    .redes a img {
+      height: 50px;
+      width: 50px; }
 
 /*pagina profesores*/
 .text {
@@ -162,14 +175,51 @@
 
 /* media queries*/
 @media (min-width: 576px) {
-  .inicio img {
-    height: auto;
+  .inicio .img_inicio {
+    display: flex;
+    justify-content: center;
     width: 100%; }
-  .inicio p {
-    font-size: 16px;
-    top: 30%;
-    left: 10%;
-    right: 10%; }
+    .inicio .img_inicio img {
+      height: auto;
+      width: 90%;
+      object-fit: cover; }
+  .inicio .img_final {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .inicio .img_final img {
+      height: auto;
+      width: 90%;
+      margin-bottom: 8vh; }
+  .inicio .div_content h1 {
+    font-size: 2em; }
+  .inicio .div_content img {
+    height: 280px;
+    width: 280px;
+    border-radius: 140px; }
+  .inicio .div_content p {
+    font-size: 1rem; }
+  .inicio .div_content p:last-child {
+    font-size: 1.6rem;
+    padding: 30px 50px;
+    font-style: italic; }
+  .logo .link {
+    height: 125px;
+    width: 125px; }
+  .lista {
+    margin-top: 25px; }
+    .lista a {
+      font-size: 1.2rem; }
+  .idiomas {
+    margin-top: 25px; }
+    .idiomas div label {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: white; }
+    .idiomas div select {
+      height: 1.2rem;
+      width: 100px;
+      font-size: 0.8rem; }
   .prof_img img {
     height: 250px;
     width: 250px; }
@@ -214,37 +264,21 @@
     text-shadow: 1px 1px 3px black, 0 0 1em rgba(255, 255, 255, 0.637), 0 0 0.2em rgba(255, 255, 255, 0.664); }
   .navbar_color .txt {
     font-size: 1.4rem; }
-  .inicio img {
-    height: auto;
-    width: 100%; }
-  .inicio div p {
-    font-size: 1.3rem; }
+  .inicio .div_content h1 {
+    font-size: 2.4em; }
+  .inicio .div_content p {
+    font-size: 1.2rem;
+    padding: 0px 50px; }
+  .inicio .div_content p:last-child {
+    font-size: 1.8rem;
+    padding: 30px 50px; }
+  .redes {
+    justify-content: space-evenly; }
+    .redes a img {
+      height: 70px;
+      width: 70px; }
   .main_prof {
     height: auto; }
-  .a img {
-    height: 150px;
-    width: 150px;
-    padding-top: 20px; }
-  .b {
-    padding-top: 20px; }
-    .b a {
-      color: #e2d390;
-      line-height: 2.5rem;
-      font-size: 1.4rem;
-      text-align: left; }
-  .c div label {
-    font-size: 1.4rem;
-    color: #e2d390; }
-  .c div select {
-    height: 2rem;
-    width: 10rem;
-    font-size: 1.2rem; }
-  .d {
-    padding-bottom: 30px;
-    padding-top: 0px; }
-    .d img {
-      height: 80px;
-      width: 80px; }
   .text {
     padding-top: 30px;
     padding-bottom: 40px; }
@@ -285,20 +319,17 @@
     font-size: 1.5rem;
     margin-right: 20px; }
   .main {
-    background-color: #e2e2e2; }
-  .content {
+    background-color: rgba(170, 191, 219, 0.404); }
+  .contenido {
     background-color: white;
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22);
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22); }
-  .inicio .img_inicio {
-    display: flex;
-    justify-content: center;
-    width: 100%; }
-    .inicio .img_inicio img {
-      height: 80vh;
-      width: 80%; }
-    .inicio .img_inicio img:last-child {
-      margin-bottom: 8vh; }
+  .inicio .img_inicio img {
+    height: 70vh;
+    width: 80%; }
+  .inicio .img_final img {
+    height: auto;
+    width: 70%; }
   .inicio .div_content h1 {
     font-size: 2.8em; }
   .inicio .div_content img {
@@ -306,20 +337,29 @@
     width: 400px;
     border-radius: 200px; }
   .inicio .div_content p {
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
   .inicio .div_content p:last-child {
     font-size: 1.8rem;
     padding: 30px 50px;
     font-style: italic; }
-  .a img {
+  .logo .link {
     height: 200px;
     width: 200px; }
-  .b a {
+  .lista a {
+    font-size: 1.4rem;
+    line-height: 2.8rem; }
+  .idiomas div label {
     font-size: 1.5rem; }
-  .c {
-    padding-top: 80px; }
-  .d {
-    padding-top: 70px; }
+  .idiomas div select {
+    height: 30px;
+    width: 90%;
+    font-size: 1rem; }
+  .redes {
+    padding: unset;
+    margin-bottom: unset; }
+    .redes a img {
+      height: 80px;
+      width: 80px; }
   .text {
     padding-top: unset; }
   .prof_img img {
