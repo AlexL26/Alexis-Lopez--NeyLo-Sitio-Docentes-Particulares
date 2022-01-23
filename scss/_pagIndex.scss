@@ -50,7 +50,7 @@
         p{
             padding: 0px 25px;
             color: rgb(0, 0, 0);
-            font-size: 16px;
+            font-size: 14px;
             span{
                 font-weight: 700;
             }
@@ -67,30 +67,42 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-image: linear-gradient(to left, $color_blue, $color_blue, $color_grey);
+    background-image: linear-gradient(to right, #6998AB, #6998AB, #406882, #406882, #406882, #6998AB, #6998AB);
 }
-.a img{
+.logo{
+    margin: 25px 0px;
+    .link{
     @include size (100px, 100px);
+    img{
+    height: 100%;
+    width: 100%;
+    }
 }
-.b{
-    margin-right: 50px;
-    a{
-        line-height: 1.5rem;
+}
+.lista{
+    padding: unset;
+    margin-bottom: 25px;
+        a{
+        line-height: 2rem;
         font-family: $fuente_text;
         font-weight: 700;
         font-size: 1rem;
-        color: black;
+        color: rgb(255, 255, 255);
         list-style-type: none;
         text-decoration: none;
         text-align: center;
-    }
+        }
 }
-.c {
+.idiomas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
     div{
          label{ 
     font-family: $fuente_text;
     font-size: 0.9rem;
     font-weight: bold;
+    color: white
          }
          select{
             @include size (1.2rem, 100px);
@@ -98,10 +110,14 @@
         }
     }
 }
-.d {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    img {
+.redes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    a{
+        padding: 0px 10px;
+        img {
         @include size (50px, 50px);
+        }
     }
 }
