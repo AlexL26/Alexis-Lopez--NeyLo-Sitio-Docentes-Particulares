@@ -1,8 +1,11 @@
 //Variables
-$color_blue: #293b5f;
-$color_grey: #B2AB8C;
-$color_softYellow: #e2d390;
 $fuente_text: Arial, Helvetica, sans-serif;
+$size_h1Mobile: 2em;
+$size_h1Tablet: 2.4em;
+$size_h1Desktop: 2.8em;
+$size_textMobile: 1rem;
+$size_textTablet: 1.2rem;
+$size_textDesktop: 1.4rem;
 
 //Mixin
 @mixin size ($alto, $ancho) {
