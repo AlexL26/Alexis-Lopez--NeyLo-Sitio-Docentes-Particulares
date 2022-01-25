@@ -2,21 +2,49 @@
 
 .precios_main{
     overflow-x: hidden;
-}
-.precios {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    
-    img{
-        @include size (100%, 100%);
+    .img_precios {    
+        margin-top: 25px;
+        img{
+            @include size (60vh, 100%);
+            object-fit: cover;
+        }
     }
-}
-.tabla{
-    p {
-    font-size: 14px;
-    }
-    table{
-        font-size: 12px;
+    .tabla{
+        margin: 25px 0px;
+        h1, h2, table, div{
+            padding-bottom: 10px;
+        }
+        h1{
+            font-size: $size_h1Mobile;
+            text-align: center;
+            text-decoration: underline;
+        }
+        h2{
+            font-style: italic;
+            padding-left: 30px;
+            margin-bottom: unset;
+        }
+        p {
+        font-size: $size_textMobile;
+        padding: 0px 15px 15px 15px;
+        span{
+            font-weight: 700;
+        }
+        }
+        table{
+            @include size (auto, 100%);
+            font-size: $size_textMobile;
+            thead{
+                font-size: 14px;
+            }
+            tbody{
+                text-align: center;
+            }
+        }
+        div{
+            img{
+                padding-bottom: 15px;
+            }
+        }
     }
 }
