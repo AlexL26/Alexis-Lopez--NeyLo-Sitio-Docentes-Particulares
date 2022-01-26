@@ -182,15 +182,30 @@
       padding-bottom: 15px; }
 
 /*pagina ubicacion*/
-.margin div {
-  padding: 15px 10px; }
+.ubi_main .ubi_texto {
+  margin-top: 25px; }
+  .ubi_main .ubi_texto h1 {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 10px; }
+  .ubi_main .ubi_texto p {
+    font-size: 1rem;
+    padding: 0px 15px; }
 
-.mapa {
+.ubi_main .mapa {
   height: 300px;
-  width: 95vw; }
-  .mapa iframe {
+  width: 90vw;
+  margin: auto; }
+  .ubi_main .mapa iframe {
     height: 100%;
     width: 100%; }
+
+.ubi_main .ubicacion {
+  margin: 25px 0; }
+  .ubi_main .ubicacion img {
+    height: 200px;
+    width: 200px; }
 
 /*pagina contactos*/
 .contacto {
@@ -259,13 +274,12 @@
     font-size: 1.6rem;
     padding: 30px 50px;
     font-style: italic; }
-  .mapa {
+  .ubi_main .mapa {
     height: 400px;
-    width: 100%; }
-  .ubicacion {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px; }
+    width: 70vw; }
+  .ubi_main .ubicacion img {
+    height: 250px;
+    width: 250px; }
   .contacto {
     height: auto; } }
 
@@ -354,19 +368,22 @@
         .precios_main .tabla table thead {
           font-size: 18px; }
   .ubi_main {
-    background-image: linear-gradient(to left, green, white, white, white, white, white, green); }
-  .mapa {
-    height: 400px;
-    width: 100%; }
-  .ubicacion {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px; }
-    .ubicacion img {
-      height: 300px;
-      width: 300px; }
-  .ubi_text {
-    font-size: 2rem; }
+    background-color: rgba(170, 191, 219, 0.404); }
+    .ubi_main .container {
+      background-color: white;
+      -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22);
+      box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22); }
+      .ubi_main .container .ubi_texto h1 {
+        font-size: 2.4em; }
+      .ubi_main .container .ubi_texto p {
+        font-size: 1.2rem;
+        padding: 0px 25px; }
+      .ubi_main .container .mapa {
+        height: 350px;
+        width: 80vw; }
+      .ubi_main .container .ubicacion img {
+        height: 300px;
+        width: 300px; }
   .form_text p {
     font-size: 20px; }
   .form_zindex {
@@ -463,6 +480,24 @@
     .precios_main .tabla table thead {
       font-size: 22px;
       text-align: center; }
+  .ubi_main .container .ubi_texto {
+    padding-top: 25px; }
+    .ubi_main .container .ubi_texto h1 {
+      font-size: 2.8em;
+      margin-bottom: 20px; }
+    .ubi_main .container .ubi_texto p {
+      font-size: 1.4rem;
+      padding: 0 75px;
+      padding-bottom: 25px; }
+  .ubi_main .container .mapa {
+    height: 400px;
+    width: 45%;
+    margin-bottom: 50px; }
+  .ubi_main .container .ubicacion {
+    margin-bottom: 50px; }
+    .ubi_main .container .ubicacion img {
+      height: 300px;
+      width: 300px; }
   .mapa {
     height: 600px;
     width: 80%; }

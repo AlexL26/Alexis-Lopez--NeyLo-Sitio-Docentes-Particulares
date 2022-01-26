@@ -70,15 +70,16 @@
     }
 
     //ubicacion
+    .ubi_main{
     .mapa {
-        @include size (400px, 100%);
+        @include size (400px, 70vw);
     }
-    .ubicacion {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0px;
+    .ubicacion{
+        img{
+            @include size (250px, 250px);
+        }
     }
-
+}    
     //contacto
 
     .contacto{
@@ -237,21 +238,30 @@
     //ubicacion
 
     .ubi_main{
-        background-image: linear-gradient(to left, green, white, white, white, white, white, green);
-    }
-    .mapa {
-        @include size (400px, 100%);
-    }
-    .ubicacion {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0px;
-        img{
-            @include size (300px, 300px);
+        background-color: rgba(170, 191, 219, 0.404);
+        .container{
+            background-color: white;
+            -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0,0,0,0.22); 
+            box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0,0,0,0.22);
+            .ubi_texto{
+                h1{
+                    font-size: $size_h1Tablet;
+                }
+                p{
+                    font-size: $size_textTablet;
+                    padding: 0px 25px;
+                }
+            }
+            .mapa {
+                @include size (350px, 80vw);
+            }
+            .ubicacion {
+                img{
+                    @include size (300px, 300px);
+                }
+            }
+    
         }
-    }
-    .ubi_text{
-        font-size: 2rem;
     }
 
     //contacto
@@ -435,6 +445,33 @@
     }
 
     //ubicacion
+    .ubi_main{
+        .container{
+            .ubi_texto{
+                padding-top: 25px;
+                h1{
+                    font-size: $size_h1Desktop;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: $size_textDesktop;
+                    padding: 0 75px;
+                    padding-bottom: 25px
+                }
+            }
+            .mapa {
+                @include size (400px, 45%);
+                margin-bottom: 50px;
+            }
+            .ubicacion {
+                margin-bottom: 50px;
+                img{
+                    @include size (300px, 300px);
+                }
+            }
+    
+        }
+    }
 
     .mapa {
         @include size (600px, 80%);
