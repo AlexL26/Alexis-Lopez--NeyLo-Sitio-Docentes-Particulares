@@ -80,27 +80,6 @@
         }
     }
 }    
-    //contacto
-
-    .contacto{
-        height: auto;
-    }
-}
-@media (min-width:576px) and (orientation:landscape) {
-.inicio{
-     div{
-         top: 10%;
-         img{
-             height: 100vh;
-         }
-         p{
-             font-size: 14px;
-             top: 30%;
-             left: 10%;
-             right: 10%;
-         }
-     }
- }
 }
 @media (min-width:767px){
     //header
@@ -266,16 +245,40 @@
 
     //contacto
 
-    .form_text{
-        p{
-        font-size: 20px;
+    .contacto{
+        background-color: rgba(170, 191, 219, 0.404);
+        .container{
+            background-color: white;
+            -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0,0,0,0.22); 
+            box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0,0,0,0.22);
+        .form{
+            &_text{
+                h1{
+                    font-size: $size_h1Tablet;
+                }
+                p{
+                    font-size: $size_textTablet;
+                    padding: 0 3vw;
+                }
+                .formulario{
+                    margin: auto 25px;
+                    &_blur{
+                    div{
+                    label{
+                        font-size: $size_textTablet;
+                    }
+                }
+                }
+                }
+            }
+            &_img{
+                    img {
+                        @include size (60vh, 90%);
+                    }   
+                }
+            }
         }
-    }
-    .form_zindex{
-        z-index: 10;
-        backdrop-filter: blur(8px);
-        padding: 50px 0px;
-    }
+        }
 }
 @media (min-width:992px) {
     //header
@@ -473,34 +476,39 @@
         }
     }
 
-    .mapa {
-        @include size (600px, 80%);
-    }
-    .ubicacion {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0px;
-        img{
-            @include size (400px, 400px);
-        }
-    }
-
     //contacto
 
     .contacto{
-        height: auto;
-        overflow-x: hidden;
-    }
-    .form_zindex{
-        padding: 50px 0px;
-
-    }
-    .img_zindex{
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-    }
+        .container{
+        .form{
+            &_text{
+                h1{
+                    font-size: $size_h1Desktop;
+                    margin-bottom: 50px;
+                }
+                p{
+                    font-size: $size_textDesktop;
+                }
+                .formulario{
+                    margin-left: unset;
+                    margin-right: 25px;
+                    &_blur{
+                    div{
+                    label{
+                        font-size: $size_textDesktop;
+                    }
+                }
+                }
+                }
+            }
+            &_img{
+                    img {
+                        @include size (70vh, 70%);
+                    }   
+                }
+            }
+        }
+        }
 
     //animaciones
 
@@ -600,4 +608,4 @@
           -webkit-animation: shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s infinite both;
                   animation: shake-bottom 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s infinite both;
       }
-    } 
+} 
