@@ -1,27 +1,49 @@
 /*pagina contactos*/
 
 .contacto{
-    height: 150vh;
+    height: auto;
     overflow-x: hidden;
-}
-.form{
-    position: relative;
-}
-.form{
-    &_zindex{
-    z-index: 10;
-    backdrop-filter: blur(8px);
-    padding-top: 30px;
-    }
-}
-.img{
-    &_zindex{
-    position: absolute;
-    z-index: 1;
-    }
-    &_form{
-        img {
-        height: 500px;
+    .form{
+        &_text{
+            h1{
+                font-size: $size_h1Mobile;
+                text-align: center;
+                text-decoration: underline;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            p{
+                font-size: $size_textMobile;
+                padding: 0 15px;
+            }
+            .formulario{
+                margin: auto;
+                &_blur{
+                    -webkit-box-shadow:0px 0px 10px 4px #406882 ;
+                    -moz-box-shadow:0px 0px 10px 4px #406882 ;
+                    box-shadow:0px 0px 10px 4px #406882 ;
+                    background-color: rgba(170, 191, 219, 0.404);
+                div{
+                    padding: 0 10px;
+                label{
+                    font-size: $size_textMobile;
+                    font-weight: 700;
+                }
+                button{
+                    margin: 10px 0;
+                }
+            }
+            }
+            }
+        }
+        &_img{
+            margin-top: 25px;
+                img {
+                    @include size (60vh, 100%);
+                    object-fit: cover;
+                    margin-bottom: 25px;
+                }   
+            }
         }
     }
-}
