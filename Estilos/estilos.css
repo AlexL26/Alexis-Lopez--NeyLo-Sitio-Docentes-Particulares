@@ -2,29 +2,28 @@
   margin: 0;
   padding: 0; }
 
-.neylo {
-  padding-left: 10px;
-  font-family: 'Neonderthaw', cursive;
-  font-size: 2.5rem;
-  color: #1900ff;
-  text-shadow: 1px 1px 3px black, 0 0 1em rgba(255, 255, 255, 0.637), 0 0 0.2em rgba(255, 255, 255, 0.664); }
-
-.navbar_color {
+.header {
   background-image: linear-gradient(to right, #6998AB, #6998AB, #406882, #406882, #406882, #6998AB, #6998AB); }
-  .navbar_color .txt {
+  .header_neylo {
+    padding-left: 10px;
+    font-family: 'Neonderthaw', cursive;
+    font-size: 2.5rem;
+    color: #1900ff;
+    text-shadow: 1px 1px 3px black, 0 0 1em rgba(255, 255, 255, 0.637), 0 0 0.2em rgba(255, 255, 255, 0.664); }
+  .header .navbar-toggler {
+    background-color: transparent;
+    border: 1px solid transparent; }
+    .header .navbar-toggler-icon {
+      color: black; }
+      .header .navbar-toggler-icon img {
+        height: 100%;
+        width: 100%; }
+  .header_alineacion_texto .enlace {
     color: white;
     font-family: 'Courgette', cursive;
     font-size: 1rem;
     font-weight: bold;
     text-align: center; }
-  .navbar_color .navbar-toggler {
-    background-color: transparent;
-    border: 1px solid transparent; }
-  .navbar_color .navbar-toggler-icon {
-    color: black; }
-    .navbar_color .navbar-toggler-icon img {
-      height: 100%;
-      width: 100%; }
 
 .footer {
   display: flex;
@@ -32,52 +31,48 @@
   align-items: center;
   align-content: center;
   background-image: linear-gradient(to right, #6998AB, #6998AB, #406882, #406882, #406882, #6998AB, #6998AB); }
-
-.logo {
-  margin: 25px 0px; }
-  .logo .link {
-    height: 100px;
-    width: 100px; }
-    .logo .link img {
-      height: 100%;
-      width: 100%; }
-
-.lista {
-  padding: unset;
-  margin-bottom: 25px; }
-  .lista a {
-    line-height: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: white;
-    list-style-type: none;
-    text-decoration: none;
-    text-align: center; }
-
-.idiomas {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px; }
-  .idiomas div label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: white; }
-  .idiomas div select {
-    height: 1.2rem;
-    width: 100px;
-    font-size: 0.8rem; }
-
-.redes {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px; }
-  .redes a {
-    padding: 0px 10px; }
-    .redes a img {
-      height: 50px;
-      width: 50px; }
+  .footer_logo {
+    margin: 25px 0px; }
+    .footer_logo .link {
+      height: 100px;
+      width: 100px; }
+      .footer_logo .link img {
+        height: 100%;
+        width: 100%; }
+  .footer_paginas {
+    padding: unset;
+    margin-bottom: 25px; }
+    .footer_paginas a {
+      line-height: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: white;
+      list-style-type: none;
+      text-decoration: none;
+      text-align: center; }
+  .footer_idiomas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px; }
+    .footer_idiomas div label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: white; }
+    .footer_idiomas div select {
+      height: 1.2rem;
+      width: 100px;
+      font-size: 0.8rem; }
+  .footer_redes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px; }
+    .footer_redes a {
+      padding: 0px 10px; }
+      .footer_redes a img {
+        height: 50px;
+        width: 50px; }
 
 .inicio {
   height: auto;
@@ -245,20 +240,20 @@
 
 /* media queries*/
 @media (min-width: 576px) {
-  .logo .link {
+  .footer_logo .link {
     height: 125px;
     width: 125px; }
-  .lista {
+  .footer_paginas {
     margin-top: 25px; }
-    .lista a {
+    .footer_paginas a {
       font-size: 1.2rem; }
-  .idiomas {
+  .footer_idiomas {
     margin-top: 25px; }
-    .idiomas div label {
+    .footer_idiomas div label {
       font-size: 1.1rem;
       font-weight: bold;
       color: white; }
-    .idiomas div select {
+    .footer_idiomas div select {
       height: 1.2rem;
       width: 100px;
       font-size: 0.8rem; }
@@ -298,15 +293,15 @@
     width: 250px; } }
 
 @media (min-width: 767px) {
-  .neylo {
+  .header_neylo {
     padding-left: 20px;
     font-size: 3.5rem;
     text-shadow: 1px 1px 3px black, 0 0 1em rgba(255, 255, 255, 0.637), 0 0 0.2em rgba(255, 255, 255, 0.664); }
-  .navbar_color .txt {
+  .header_alineacion_texto .enlace {
     font-size: 1.4rem; }
-  .redes {
+  .footer_redes {
     justify-content: space-evenly; }
-    .redes a img {
+    .footer_redes a img {
       height: 70px;
       width: 70px; }
   .main {
@@ -407,29 +402,29 @@
         width: 90%; } }
 
 @media (min-width: 992px) {
-  .neylo {
+  .header_neylo {
     font-size: 5rem; }
-  .nav_aling {
+  .header_alineacion {
     justify-content: right; }
-  .navbar_color .txt {
-    font-size: 1.5rem;
-    margin-right: 20px; }
-  .logo .link {
+    .header_alineacion_texto .enlace {
+      font-size: 1.5rem;
+      margin-right: 20px; }
+  .footer_logo .link {
     height: 200px;
     width: 200px; }
-  .lista a {
+  .footer_paginas a {
     font-size: 1.4rem;
     line-height: 2.8rem; }
-  .idiomas div label {
+  .footer_idiomas div label {
     font-size: 1.5rem; }
-  .idiomas div select {
+  .footer_idiomas div select {
     height: 30px;
     width: 90%;
     font-size: 1rem; }
-  .redes {
+  .footer_redes {
     padding: unset;
     margin-bottom: unset; }
-    .redes a img {
+    .footer_redes a img {
       height: 80px;
       width: 80px; }
   .inicio .img_inicio img {
