@@ -1,30 +1,32 @@
 /*pagina ubicacion*/
 
-.ubi_main{
-    .ubi_texto{
-        margin-top: 25px;
-        h1{
-            font-size: $size_h1Mobile;
-            text-align: center;
-            text-decoration: underline;
-            padding-bottom: 10px;
-        }
-        p{
-            font-size: $size_textMobile;
-            padding: 0px 15px;
-        }
-    }
-    .mapa {
-        @include size (300px, 90vw);
-        margin: auto;
-        iframe{
-            @include size (100%, 100%);
-        }
-    }
+.mainUbicacion{
     .ubicacion{
-        margin: 25px 0;
-        img{
-            @include size (200px, 200px);
+        &_texto{
+            margin-top: 25px;
+            h1{
+                font-size: $size_h1Mobile;
+                text-align: center;
+                text-decoration: underline;
+                padding-bottom: 10px;
+            }
+            p{
+                font-size: $size_textMobile;
+                padding: 0px 15px;
+            }
         }
-    }    
+        &_mapa{
+            @include size (300px, 90vw);
+            margin: auto;
+            iframe{
+                @include size (100%, 100%);
+            }
+        }
+        &_imagen{
+            margin: 25px 0;
+            img{
+                @include size (200px, 200px);
+            }
+        }
+    }
 }

@@ -1,12 +1,11 @@
 .inicio{
     height: auto;
-    overflow-x: hidden;
     img{
         @include size (auto, 100%);
         margin: 25px 0;
         right: 0%;
     }
-    div{
+    &_contenido{
         h1{
             text-align: center;
             font-size: $size_h1Mobile;

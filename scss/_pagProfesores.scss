@@ -1,53 +1,50 @@
-/*pagina profesores*/
-
-.articulo_prof{
-    .presentacion_prof{
-    h1{
-        font-size: $size_h1Mobile;
-        padding-top: 25px;
-        padding-bottom: 15px;
-        text-decoration: underline;
-        text-align: center;
-    }
-    .parrafo{
-    p{
-        font-size: $size_textMobile;
-        padding: 0px 15px;
-    }
-}
-    .profesores{
-        @include size (250px, 250px);
-        margin: auto;
-        .nombres{
-            padding: unset;
-            h5{
-            background-color: rgba(255, 255, 255, 0.568);
-            color: black;
-            font-size: $size_textMobile;
+.profesores{
+    &_presentacion{
+        h1{
+            font-size: $size_h1Mobile;
+            padding-top: 25px;
+            padding-bottom: 15px;
+            text-decoration: underline;
+            text-align: center;
+        }
+        .parrafo{
+            p{
+                font-size: $size_textMobile;
+                padding: 0px 15px;
+            }
+        }
+        .fotos{
+            @include size (auto, 100%);
+            margin: auto;
+            .nombres{
+                h5{
+                    background-color: rgba(255, 255, 255, 0.568);
+                    color: black;
+                    font-size: $size_textMobile;
+                }
+            }
         }
     }
+    &_lista{
+        list-style-type: none;
+        text-decoration: none;
+        margin-top: 25px;
+        div{
+            ul{
+                padding-bottom: 15px;
+                li{
+                    font-size: $size_textMobile;
+                }
+            }
+        }
+    }
+    &_imagen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        img{
+            @include size (200px, 200px);
+        }
     }    
-}
-.lista_prof {
-    list-style-type: none;
-    text-decoration: none;
-    margin-top: 25px;
-    div{
-    ul{
-        padding-bottom: 15px;
-        li{
-            font-size: $size_textMobile;
-        }
-    }
-}
-}
-.prof_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-    img{
-        @include size (200px, 200px);
-    }
-}
 }
