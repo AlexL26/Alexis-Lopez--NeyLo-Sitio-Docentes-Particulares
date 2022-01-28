@@ -1,10 +1,9 @@
 /*pagina contactos*/
 
-.contacto{
+.mainContacto{
     height: auto;
-    overflow-x: hidden;
-    .form{
-        &_text{
+    .contacto{
+        &_texto{
             h1{
                 font-size: $size_h1Mobile;
                 text-align: center;
@@ -19,31 +18,30 @@
             }
             .formulario{
                 margin: auto;
-                &_blur{
+                &_fondo{
                     -webkit-box-shadow:0px 0px 10px 4px #406882 ;
                     -moz-box-shadow:0px 0px 10px 4px #406882 ;
                     box-shadow:0px 0px 10px 4px #406882 ;
                     background-color: rgba(170, 191, 219, 0.404);
-                div{
-                    padding: 0 10px;
-                label{
-                    font-size: $size_textMobile;
-                    font-weight: 700;
+                    div{
+                        padding: 0 10px;
+                        label{
+                            font-size: $size_textMobile;
+                            font-weight: 700;
+                        }
+                        button{
+                            margin: 10px 0;
+                        }
+                    }
                 }
-                button{
-                    margin: 10px 0;
-                }
-            }
-            }
             }
         }
-        &_img{
+        &_imagen{
             margin-top: 25px;
-                img {
-                    @include size (60vh, 100%);
-                    object-fit: cover;
-                    margin-bottom: 25px;
-                }   
-            }
+            img{
+                @include size (auto, 100%);
+                margin-bottom: 25px;
+            }   
         }
     }
+}

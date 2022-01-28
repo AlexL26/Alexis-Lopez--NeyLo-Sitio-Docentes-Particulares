@@ -75,167 +75,159 @@
         width: 50px; }
 
 .inicio {
-  height: auto;
-  overflow-x: hidden; }
+  height: auto; }
   .inicio img {
     height: auto;
     width: 100%;
     margin: 25px 0;
     right: 0%; }
-  .inicio div h1 {
+  .inicio_contenido h1 {
     text-align: center;
     font-size: 2em;
     text-decoration: underline;
     margin: 0.67em 0; }
-  .inicio div p {
+  .inicio_contenido p {
     padding: 0px 25px;
     color: black;
     font-size: 1rem; }
-    .inicio div p span {
+    .inicio_contenido p span {
       font-weight: 700; }
-  .inicio div p:last-child {
+  .inicio_contenido p:last-child {
     text-align: center;
     font-size: 20px;
     font-weight: 700; }
 
-/*pagina profesores*/
-.articulo_prof .presentacion_prof h1 {
+.profesores_presentacion h1 {
   font-size: 2em;
   padding-top: 25px;
   padding-bottom: 15px;
   text-decoration: underline;
   text-align: center; }
 
-.articulo_prof .presentacion_prof .parrafo p {
+.profesores_presentacion .parrafo p {
   font-size: 1rem;
   padding: 0px 15px; }
 
-.articulo_prof .presentacion_prof .profesores {
-  height: 250px;
-  width: 250px;
+.profesores_presentacion .fotos {
+  height: auto;
+  width: 100%;
   margin: auto; }
-  .articulo_prof .presentacion_prof .profesores .nombres {
-    padding: unset; }
-    .articulo_prof .presentacion_prof .profesores .nombres h5 {
-      background-color: rgba(255, 255, 255, 0.568);
-      color: black;
-      font-size: 1rem; }
+  .profesores_presentacion .fotos .nombres h5 {
+    background-color: rgba(255, 255, 255, 0.568);
+    color: black;
+    font-size: 1rem; }
 
-.articulo_prof .lista_prof {
+.profesores_lista {
   list-style-type: none;
   text-decoration: none;
   margin-top: 25px; }
-  .articulo_prof .lista_prof div ul {
+  .profesores_lista div ul {
     padding-bottom: 15px; }
-    .articulo_prof .lista_prof div ul li {
+    .profesores_lista div ul li {
       font-size: 1rem; }
 
-.articulo_prof .prof_img {
+.profesores_imagen {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px; }
-  .articulo_prof .prof_img img {
+  .profesores_imagen img {
     height: 200px;
     width: 200px; }
 
 /*pagina precios*/
-.precios_main {
-  overflow-x: hidden; }
-  .precios_main .img_precios {
-    margin-top: 25px; }
-    .precios_main .img_precios img {
-      height: 60vh;
-      width: 100%;
-      object-fit: cover; }
-  .precios_main .tabla {
-    margin: 25px 0px; }
-    .precios_main .tabla h1, .precios_main .tabla h2, .precios_main .tabla table, .precios_main .tabla div {
-      padding-bottom: 10px; }
-    .precios_main .tabla h1 {
-      font-size: 2em;
-      text-align: center;
-      text-decoration: underline; }
-    .precios_main .tabla h2 {
-      font-style: italic;
-      padding-left: 30px;
-      margin-bottom: unset; }
-    .precios_main .tabla p {
-      font-size: 1rem;
-      padding: 0px 15px 15px 15px; }
-      .precios_main .tabla p span {
-        font-weight: 700; }
-    .precios_main .tabla table {
-      height: auto;
-      width: 100%;
-      font-size: 1rem; }
-      .precios_main .tabla table thead {
-        font-size: 14px; }
-      .precios_main .tabla table tbody {
-        text-align: center; }
-    .precios_main .tabla div img {
-      padding-bottom: 15px; }
+.mainPrecios .precios_imagen {
+  margin-top: 25px; }
+  .mainPrecios .precios_imagen img {
+    height: auto;
+    width: 100%; }
+
+.mainPrecios .precios_tabla {
+  margin: 25px 0px; }
+  .mainPrecios .precios_tabla h1, .mainPrecios .precios_tabla h2, .mainPrecios .precios_tabla table, .mainPrecios .precios_tabla div {
+    padding-bottom: 10px; }
+  .mainPrecios .precios_tabla h1 {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline; }
+  .mainPrecios .precios_tabla h2 {
+    font-style: italic;
+    padding-left: 30px;
+    margin-bottom: unset; }
+  .mainPrecios .precios_tabla p {
+    font-size: 1rem;
+    padding: 0px 15px 15px 15px; }
+    .mainPrecios .precios_tabla p span {
+      font-weight: 700; }
+  .mainPrecios .precios_tabla table {
+    height: auto;
+    width: 100%;
+    font-size: 1rem; }
+    .mainPrecios .precios_tabla table thead {
+      font-size: 12px; }
+    .mainPrecios .precios_tabla table tbody {
+      text-align: center; }
+  .mainPrecios .precios_tabla div img {
+    padding-bottom: 15px; }
 
 /*pagina ubicacion*/
-.ubi_main .ubi_texto {
+.mainUbicacion .ubicacion_texto {
   margin-top: 25px; }
-  .ubi_main .ubi_texto h1 {
+  .mainUbicacion .ubicacion_texto h1 {
     font-size: 2em;
     text-align: center;
     text-decoration: underline;
     padding-bottom: 10px; }
-  .ubi_main .ubi_texto p {
+  .mainUbicacion .ubicacion_texto p {
     font-size: 1rem;
     padding: 0px 15px; }
 
-.ubi_main .mapa {
+.mainUbicacion .ubicacion_mapa {
   height: 300px;
   width: 90vw;
   margin: auto; }
-  .ubi_main .mapa iframe {
+  .mainUbicacion .ubicacion_mapa iframe {
     height: 100%;
     width: 100%; }
 
-.ubi_main .ubicacion {
+.mainUbicacion .ubicacion_imagen {
   margin: 25px 0; }
-  .ubi_main .ubicacion img {
+  .mainUbicacion .ubicacion_imagen img {
     height: 200px;
     width: 200px; }
 
 /*pagina contactos*/
-.contacto {
-  height: auto;
-  overflow-x: hidden; }
-  .contacto .form_text h1 {
+.mainContacto {
+  height: auto; }
+  .mainContacto .contacto_texto h1 {
     font-size: 2em;
     text-align: center;
     text-decoration: underline;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px; }
-  .contacto .form_text p {
+  .mainContacto .contacto_texto p {
     font-size: 1rem;
     padding: 0 15px; }
-  .contacto .form_text .formulario {
+  .mainContacto .contacto_texto .formulario {
     margin: auto; }
-    .contacto .form_text .formulario_blur {
+    .mainContacto .contacto_texto .formulario_fondo {
       -webkit-box-shadow: 0px 0px 10px 4px #406882;
       -moz-box-shadow: 0px 0px 10px 4px #406882;
       box-shadow: 0px 0px 10px 4px #406882;
       background-color: rgba(170, 191, 219, 0.404); }
-      .contacto .form_text .formulario_blur div {
+      .mainContacto .contacto_texto .formulario_fondo div {
         padding: 0 10px; }
-        .contacto .form_text .formulario_blur div label {
+        .mainContacto .contacto_texto .formulario_fondo div label {
           font-size: 1rem;
           font-weight: 700; }
-        .contacto .form_text .formulario_blur div button {
+        .mainContacto .contacto_texto .formulario_fondo div button {
           margin: 10px 0; }
-  .contacto .form_img {
+  .mainContacto .contacto_imagen {
     margin-top: 25px; }
-    .contacto .form_img img {
-      height: 60vh;
+    .mainContacto .contacto_imagen img {
+      height: auto;
       width: 100%;
-      object-fit: cover;
       margin-bottom: 25px; }
 
 /* media queries*/
@@ -257,38 +249,41 @@
       height: 1.2rem;
       width: 100px;
       font-size: 0.8rem; }
-  .inicio .img_inicio {
+  .inicio_imagen {
     display: flex;
     justify-content: center;
     width: 100%; }
-    .inicio .img_inicio img {
+    .inicio_imagen img {
       height: auto;
       width: 90%;
       object-fit: cover; }
-  .inicio .img_final {
-    display: flex;
-    justify-content: center;
-    width: 100%; }
-    .inicio .img_final img {
-      height: auto;
-      width: 90%;
-      margin-bottom: 8vh; }
-  .inicio .div_content h1 {
+  .inicio_contenido h1 {
     font-size: 2em; }
-  .inicio .div_content img {
-    height: 280px;
-    width: 280px;
-    border-radius: 140px; }
-  .inicio .div_content p {
+  .inicio_contenido img {
+    height: 260px;
+    width: 260px;
+    border-radius: 130px; }
+  .inicio_contenido p {
     font-size: 1rem; }
-  .inicio .div_content p:last-child {
+  .inicio_contenido p:last-child {
     font-size: 1.6rem;
     padding: 30px 50px;
     font-style: italic; }
-  .ubi_main .mapa {
+  .inicio_imagenFinal {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .inicio_imagenFinal img {
+      height: auto;
+      width: 90%;
+      margin-bottom: 8vh; }
+  .profesores_presentacion .fotos {
+    height: auto;
+    width: 80%; }
+  .mainUbicacion .container .ubicacion_mapa {
     height: 400px;
     width: 70vw; }
-  .ubi_main .ubicacion img {
+  .mainUbicacion .container .ubicacion_imagen img {
     height: 250px;
     width: 250px; } }
 
@@ -304,102 +299,100 @@
     .footer_redes a img {
       height: 70px;
       width: 70px; }
-  .main {
+  .mainIndex {
     background-color: rgba(170, 191, 219, 0.404); }
-  .contenido {
-    background-color: white;
-    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22);
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22); }
-  .inicio .div_content h1 {
-    font-size: 2.4em; }
-  .inicio .div_content p {
-    font-size: 1.2rem;
-    padding: 0px 50px; }
-  .inicio .div_content p:last-child {
-    font-size: 1.8rem;
-    padding: 30px 50px; }
-  .main_prof {
+    .mainIndex .container {
+      background-color: white;
+      -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22);
+      box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22); }
+      .mainIndex .container .inicio_contenido h1 {
+        font-size: 2.4em; }
+      .mainIndex .container .inicio_contenido p {
+        font-size: 1.2rem;
+        padding: 0px 50px; }
+      .mainIndex .container .inicio_contenido p:last-child {
+        font-size: 1.8rem;
+        padding: 30px 50px; }
+  .mainProfesores {
     height: auto;
     background-color: rgba(170, 191, 219, 0.404); }
-    .main_prof .articulo_prof {
+    .mainProfesores .container {
       background-color: white;
       -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22);
-      box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22);
-      padding-top: 30px;
-      padding-bottom: 40px; }
-      .main_prof .articulo_prof .presentacion_prof h1 {
+      box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22); }
+      .mainProfesores .container .profesores_presentacion h1 {
         font-size: 2.4em; }
-      .main_prof .articulo_prof .presentacion_prof .parrafo {
+      .mainProfesores .container .profesores_presentacion .parrafo {
         padding: 0px 25px; }
-        .main_prof .articulo_prof .presentacion_prof .parrafo p {
+        .mainProfesores .container .profesores_presentacion .parrafo p {
           font-size: 1.2rem; }
-      .main_prof .articulo_prof .presentacion_prof .profesores {
-        height: 300px;
-        width: 300px; }
-        .main_prof .articulo_prof .presentacion_prof .profesores .nombres h5 {
+      .mainProfesores .container .profesores_presentacion .fotos {
+        height: 400px;
+        width: 400px; }
+        .mainProfesores .container .profesores_presentacion .fotos .nombres h5 {
           font-size: 1.2rem; }
-      .main_prof .articulo_prof .lista_prof div h2 {
+      .mainProfesores .container .profesores_lista div h2 {
         font-size: 2em; }
-      .main_prof .articulo_prof .lista_prof div ul li {
+      .mainProfesores .container .profesores_lista div ul li {
         font-size: 1.2rem; }
-      .main_prof .articulo_prof .prof_img img {
+      .mainProfesores .container .profesores_imagen img {
         height: 250px;
         width: 250px; }
-  .precios_main {
+  .mainPrecios {
     background-color: rgba(170, 191, 219, 0.404); }
-    .precios_main .container {
+    .mainPrecios .container {
       background-color: white;
       -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22);
       box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22); }
-      .precios_main .container .img_precios img {
-        height: 70vh;
+      .mainPrecios .container .precios_imagen img {
+        height: auto;
         width: 90%; }
-    .precios_main .tabla {
-      margin-left: 25px;
-      margin-right: 25px; }
-      .precios_main .tabla h1 {
-        font-size: 2.4em; }
-      .precios_main .tabla p {
-        font-size: 1.2rem; }
-      .precios_main .tabla table {
-        font-size: 1.2rem; }
-        .precios_main .tabla table thead {
-          font-size: 18px; }
-  .ubi_main {
+      .mainPrecios .container .precios_tabla {
+        margin-left: 25px;
+        margin-right: 25px; }
+        .mainPrecios .container .precios_tabla h1 {
+          font-size: 2.4em; }
+        .mainPrecios .container .precios_tabla p {
+          font-size: 1.2rem; }
+        .mainPrecios .container .precios_tabla table {
+          font-size: 1.2rem; }
+          .mainPrecios .container .precios_tabla table thead {
+            font-size: 18px; }
+  .mainUbicacion {
     background-color: rgba(170, 191, 219, 0.404); }
-    .ubi_main .container {
+    .mainUbicacion .container {
       background-color: white;
       -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22);
       box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22); }
-      .ubi_main .container .ubi_texto h1 {
+      .mainUbicacion .container .ubicacion_texto h1 {
         font-size: 2.4em; }
-      .ubi_main .container .ubi_texto p {
+      .mainUbicacion .container .ubicacion_texto p {
         font-size: 1.2rem;
         padding: 0px 25px; }
-      .ubi_main .container .mapa {
+      .mainUbicacion .container .ubicacion_mapa {
         height: 350px;
-        width: 80vw; }
-      .ubi_main .container .ubicacion img {
+        width: 80%; }
+      .mainUbicacion .container .ubicacion_imagen img {
         height: 300px;
         width: 300px; }
-  .contacto {
+  .mainContacto {
     background-color: rgba(170, 191, 219, 0.404); }
-    .contacto .container {
+    .mainContacto .container {
       background-color: white;
       -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22);
       box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 14px -18px rgba(0, 0, 0, 0.22); }
-      .contacto .container .form_text h1 {
+      .mainContacto .container .contacto_texto h1 {
         font-size: 2.4em; }
-      .contacto .container .form_text p {
+      .mainContacto .container .contacto_texto p {
         font-size: 1.2rem;
         padding: 0 3vw; }
-      .contacto .container .form_text .formulario {
+      .mainContacto .container .contacto_texto .formulario {
         margin: auto 25px; }
-        .contacto .container .form_text .formulario_blur div label {
+        .mainContacto .container .contacto_texto .formulario_fondo div label {
           font-size: 1.2rem; }
-      .contacto .container .form_img img {
-        height: 60vh;
-        width: 90%; } }
+      .mainContacto .container .contacto_imagen img {
+        height: auto;
+        width: 85%; } }
 
 @media (min-width: 992px) {
   .header_neylo {
@@ -427,99 +420,101 @@
     .footer_redes a img {
       height: 80px;
       width: 80px; }
-  .inicio .img_inicio img {
+  .inicio_imagen img {
     height: 70vh;
     width: 80%; }
-  .inicio .img_final img {
+  .inicio_imagenFinal img {
     height: auto;
     width: 70%; }
-  .inicio .div_content h1 {
+  .inicio_contenido h1 {
     font-size: 2.8em; }
-  .inicio .div_content img {
+  .inicio_contenido img {
     height: 400px;
     width: 400px;
     border-radius: 200px; }
-  .inicio .div_content p {
+  .inicio_contenido p {
     font-size: 1.4rem; }
-  .inicio .div_content p:last-child {
+  .inicio_contenido p:last-child {
     font-size: 1.8rem;
     padding: 30px 50px;
     font-style: italic; }
-  .main_prof .articulo_prof {
+  .mainProfesores .container .profesores {
     padding-top: unset; }
-    .main_prof .articulo_prof .presentacion_prof {
+    .mainProfesores .container .profesores_presentacion {
       margin-top: 25px; }
-      .main_prof .articulo_prof .presentacion_prof h1 {
+      .mainProfesores .container .profesores_presentacion h1 {
         font-size: 2.8em; }
-      .main_prof .articulo_prof .presentacion_prof .parrafo {
-        margin-left: 25px;
+      .mainProfesores .container .profesores_presentacion .parrafo {
+        margin-left: 50px;
         padding: unset; }
-        .main_prof .articulo_prof .presentacion_prof .parrafo p {
+        .mainProfesores .container .profesores_presentacion .parrafo p {
           font-size: 1.4rem; }
-      .main_prof .articulo_prof .presentacion_prof .profesores {
-        height: 350px;
-        width: 350px; }
-        .main_prof .articulo_prof .presentacion_prof .profesores .nombres h5 {
+      .mainProfesores .container .profesores_presentacion .fotos {
+        height: 400px;
+        width: 400px; }
+        .mainProfesores .container .profesores_presentacion .fotos .nombres h5 {
           font-size: 1.4rem; }
-    .main_prof .articulo_prof .lista_prof div h2 {
+    .mainProfesores .container .profesores_lista div h2 {
       font-size: 2em; }
-    .main_prof .articulo_prof .lista_prof div ul li {
+    .mainProfesores .container .profesores_lista div ul li {
       font-size: 1.4rem; }
-    .main_prof .articulo_prof .prof_img img {
+    .mainProfesores .container .profesores_imagen img {
       height: 400px;
       width: 400px; }
-  .precios_main .container .img_precios img {
+  .mainPrecios .container .precios_imagen img {
     height: 70vh;
-    width: 80%; }
-  .precios_main .tabla h1, .precios_main .tabla h2, .precios_main .tabla table, .precios_main .tabla div {
+    width: 80%;
+    object-fit: cover; }
+  .mainPrecios .container .precios_tabla h1, .mainPrecios .container .precios_tabla h2, .mainPrecios .container .precios_tabla table, .mainPrecios .container .precios_tabla div {
     padding-bottom: 20px; }
-  .precios_main .tabla h1 {
+  .mainPrecios .container .precios_tabla h1 {
     margin-top: 25px;
     font-size: 2.8em; }
-  .precios_main .tabla h2 {
+  .mainPrecios .container .precios_tabla h2 {
     padding-left: 100px; }
-  .precios_main .tabla p {
+  .mainPrecios .container .precios_tabla p {
     padding-left: 50px;
     padding-right: 50px;
     font-size: 1.4rem; }
-  .precios_main .tabla table {
+  .mainPrecios .container .precios_tabla table {
     height: auto;
     width: 95%;
     font-size: 1.4rem;
     margin: auto; }
-    .precios_main .tabla table thead {
+    .mainPrecios .container .precios_tabla table thead {
       font-size: 22px;
       text-align: center; }
-  .ubi_main .container .ubi_texto {
+  .mainUbicacion .container .ubicacion_texto {
     padding-top: 25px; }
-    .ubi_main .container .ubi_texto h1 {
+    .mainUbicacion .container .ubicacion_texto h1 {
       font-size: 2.8em;
       margin-bottom: 20px; }
-    .ubi_main .container .ubi_texto p {
+    .mainUbicacion .container .ubicacion_texto p {
       font-size: 1.4rem;
       padding: 0 75px;
       padding-bottom: 25px; }
-  .ubi_main .container .mapa {
+  .mainUbicacion .container .ubicacion_mapa {
     height: 400px;
     width: 45%;
     margin-bottom: 50px; }
-  .ubi_main .container .ubicacion {
+  .mainUbicacion .container .ubicacion_imagen {
     margin-bottom: 50px; }
-    .ubi_main .container .ubicacion img {
+    .mainUbicacion .container .ubicacion_imagen img {
       height: 300px;
       width: 300px; }
-  .contacto .container .form_text h1 {
+  .mainContacto .container .contacto_texto h1 {
     font-size: 2.8em;
-    margin-bottom: 50px; }
-  .contacto .container .form_text p {
+    margin-bottom: 25px; }
+  .mainContacto .container .contacto_texto p {
     font-size: 1.4rem; }
-  .contacto .container .form_text .formulario {
-    margin-left: unset;
-    margin-right: 25px; }
-    .contacto .container .form_text .formulario_blur div label {
-      font-size: 1.4rem; }
-  .contacto .container .form_img img {
-    height: 70vh;
+  .mainContacto .container .contacto_texto .formulario {
+    margin-left: unset; }
+    .mainContacto .container .contacto_texto .formulario_fondo {
+      margin-right: 5px; }
+      .mainContacto .container .contacto_texto .formulario_fondo div label {
+        font-size: 1.4rem; }
+  .mainContacto .container .contacto_imagen img {
+    height: auto;
     width: 70%; }
   @-webkit-keyframes slide-right {
     0% {
