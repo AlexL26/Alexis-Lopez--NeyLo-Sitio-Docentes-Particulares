@@ -3,28 +3,30 @@
 @media (min-width: 576px) {
     //footer
 
-    .logo{
-        .link{
-            @include size (125px, 125px);
+    .footer{
+        &_logo{
+            .link{
+                @include size (125px, 125px);
+            }
         }
-    }
-    .lista{
-        margin-top: 25px;
-        a{
-            font-size: 1.2rem;
+        &_paginas{
+            margin-top: 25px;
+            a{
+                font-size: 1.2rem;
+            }
         }
-    }
-    .idiomas {
-        margin-top: 25px;
-        div{
-             label{ 
-        font-size: 1.1rem;
-        font-weight: bold;
-        color: white
-             }
-             select{
-                @include size (1.2rem, 100px);
-                font-size: 0.8rem;
+        &_idiomas{
+            margin-top: 25px;
+            div{
+                label{ 
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: white
+                }
+                select{
+                    @include size (1.2rem, 100px);
+                    font-size: 0.8rem;
+                }
             }
         }
     }
@@ -84,24 +86,30 @@
 @media (min-width:767px){
     //header
 
-    .neylo{
+    .header{
+        &_neylo{
         padding-left: 20px;
         font-size: 3.5rem;
         text-shadow: 1px 1px 3px black, 0 0 1em rgba(255, 255, 255, 0.637), 0 0 0.2em rgba(255, 255, 255, 0.664);
-    }
-    .navbar_color{
-        .txt{
-        font-size: 1.4rem;
+        }
+        &_alineacion{
+            &_texto{
+                .enlace{
+                    font-size: 1.4rem;
+                }
+            }
         }
     }
 
     //footer
 
-    .redes {
-        justify-content: space-evenly;
-        a{
-            img {
-            @include size (70px, 70px);
+    .footer{
+        &_redes{
+            justify-content: space-evenly;
+            a{
+                img {
+                    @include size (70px, 70px);
+                }
             }
         }
     }
@@ -283,49 +291,52 @@
 @media (min-width:992px) {
     //header
 
-    .neylo{
-        font-size: 5rem;
-    }
-    .nav_aling{
-        justify-content: right;
-    }
-    .navbar_color{
-        .txt{
-        font-size: 1.5rem;
-        margin-right: 20px;
+    .header{
+        &_neylo{
+            font-size: 5rem;
+        }
+        &_alineacion{
+            justify-content: right;
+            &_texto{
+                .enlace{
+                    font-size: 1.5rem;            margin-right: 20px;
+                }
+            }
         }
     }
 
     //footer
 
-    .logo{
-        .link{
-            @include size (200px, 200px);
-        }
-    }
-    .lista{
-        a{
-            font-size: 1.4rem;
-            line-height: 2.8rem;
-        }
-    }
-    .idiomas {
-        div{
-            label{ 
-        font-size: 1.5rem;
-            }
-            select{
-                @include size (30px, 90%);
-                font-size: 1rem;
+    .footer{
+        &_logo{
+            .link{
+                @include size (200px, 200px);
             }
         }
-    }
-    .redes {
-        padding: unset;
-        margin-bottom: unset;
-        a{
-            img {
-            @include size (80px, 80px);
+        &_paginas{
+            a{
+                font-size: 1.4rem;
+                line-height: 2.8rem;
+            }
+        }
+        &_idiomas{
+            div{
+                label{ 
+                    font-size: 1.5rem;
+                }
+                select{
+                    @include size (30px, 90%);
+                    font-size: 1rem;
+                }
+            }
+        }
+        &_redes{
+            padding: unset;
+            margin-bottom: unset;
+            a{
+                img{
+                    @include size (80px, 80px);
+                }
             }
         }
     }
