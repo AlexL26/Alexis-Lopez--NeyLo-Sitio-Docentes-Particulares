@@ -8,4 +8,4 @@ El sitio cuentas con un maquetado completamente hecho con Bootstrap, utilizando 
 
 Este sitio esta subido ademas en Github, con el usuario AlexL26, con el titulo que tiene este documento.
 
-Es mi primer sitio web asi que esta abierto a crecer mucho ya que tiene intencion de que sea viable de ser usado.
+Es mi primer sitio web asi que esta abierto a crecer mucho ya que tiene intencion de que sea viable de ser usado. Va a seguir siendo actualizado a medida que vaya aumentando las herramientas de programacion asi tambien como cuando otros docentes se sumen al proyecto.
